@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "dedicational app to \"hit the bone members\" using graphql, nodejs, prisma",
   "scripts": {
-    "dev": ""
+    "dev": "nodemon --exec node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/hekoh99/hitthebone_backend/issues"
   },
-  "homepage": "https://github.com/hekoh99/hitthebone_backend#readme"
+  "homepage": "https://github.com/hekoh99/hitthebone_backend#readme",
+  "dependencies": {
+    "apollo-server": "^2.25.2",
+    "graphql": "^15.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
