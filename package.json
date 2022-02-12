@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "dedicational app to \"hit the bone members\" using graphql, nodejs, prisma",
   "scripts": {
-    "dev": "nodemon --exec node server.js"
+    "dev": "nodemon --exec babel-node server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
     "graphql": "^15.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
     "nodemon": "^2.0.15"
   }
 }
