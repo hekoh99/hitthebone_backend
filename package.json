@@ -1,0 +1,19 @@
+{
+  "name": "htb_back",
+  "version": "1.0.0",
+  "description": "dedicational app to \"hit the bone members\" using graphql, nodejs, prisma",
+  "scripts": {
+    "dev": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hekoh99/hitthebone_backend.git"
+  },
+  "keywords": [],
+  "author": "haeunko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hekoh99/hitthebone_backend/issues"
+  },
+  "homepage": "https://github.com/hekoh99/hitthebone_backend#readme"
+}
