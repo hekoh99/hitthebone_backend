@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "dedicational app to \"hit the bone members\" using graphql, nodejs, prisma",
   "scripts": {
-    "dev": "nodemon --exec babel-node server"
+    "dev": "nodemon --exec babel-node server",
+    "migrate": "npx prisma migrate dev"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/hekoh99/hitthebone_backend#readme",
   "dependencies": {
+    "@prisma/client": "^3.9.2",
     "apollo-server": "^2.25.2",
     "graphql": "^15.8.0"
   },
