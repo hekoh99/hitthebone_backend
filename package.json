@@ -4,7 +4,8 @@
   "description": "dedicational app to \"hit the bone members\" using graphql, nodejs, prisma",
   "scripts": {
     "dev": "nodemon --exec babel-node server",
-    "migrate": "npx prisma migrate dev"
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio"
   },
   "repository": {
     "type": "git",
