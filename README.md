@@ -1,2 +1,2 @@
 # Hit the Bone
-dedicational app to "hit the bone members" using graphql, nodejs, prisma
+The app dedicated to "hit the bone" members using Graphql, Nodejs, Prisma
