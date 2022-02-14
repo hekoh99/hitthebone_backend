@@ -1,9 +1,7 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-
 export default {
   Query: {
-    AllUsers: () => prisma.user.findMany(),
+    AllUsers: async (_, __, context) => {
+      return await context.prisma.User.findMany();
+    },
   },
 };
