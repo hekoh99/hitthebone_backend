@@ -1,5 +1,18 @@
+scalar DateTime
+
 type User {
   id: Int
   email: String
   nickname: String
+  createdAt: DateTime
+  updatedAt: DateTime
+}
+
+type Post {
+  id: Int
+  caption: String
+  userId: Int
+  author: User
+  createdAt: DateTime
+  updatedAt: DateTime
 }
