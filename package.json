@@ -22,6 +22,7 @@
     "@graphql-tools/load-files": "^6.5.3",
     "@prisma/client": "^3.9.2",
     "apollo-server": "^2.25.2",
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
     "graphql": "^15.8.0",
     "graphql-tools": "^8.2.0"
