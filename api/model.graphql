@@ -8,6 +8,12 @@ type User {
   updatedAt: DateTime
 }
 
+type LoginResult {
+  status: Boolean!
+  token: String
+  errorMsg: String
+}
+
 type Post {
   id: Int
   caption: String
