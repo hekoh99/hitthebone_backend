@@ -8,10 +8,14 @@ type User {
   updatedAt: DateTime
 }
 
-type LoginResult {
+type Result {
   status: Boolean!
-  token: String
   errorMsg: String
+}
+
+type LoginResult {
+  result: Result!
+  token: String
 }
 
 type Post {
