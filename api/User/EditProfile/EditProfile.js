@@ -1,5 +1,7 @@
 export default {
   Mutation: {
-    EditProfile: (_, args, context) => {},
+    EditProfile: async (_, args, context) => {
+      return context.prisma.Post.findMany({ where: {} });
+    },
   },
 };
