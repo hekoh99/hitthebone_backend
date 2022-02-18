@@ -20,7 +20,7 @@ type LoginResult {
 
 type Post {
   id: Int
-  caption: String
+  content: String
   userId: Int
   author: User
   createdAt: DateTime
