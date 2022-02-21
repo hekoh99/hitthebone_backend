@@ -5,8 +5,6 @@ export default {
   Mutation: {
     EditProfile: authResolver(async (_, args, context) => {
       const { nickname, email, password } = args;
-      if (context.user === undefined)
-        return { status: false, errorMsg: "please login first" };
       let hashedPwd = null;
       if (password) hashedPwd = await bcrypt.hash(password, 10);
       const updatedUser = await context.prisma.User.update({
