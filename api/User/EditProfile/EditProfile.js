@@ -1,8 +1,9 @@
 import bcrypt from "bcrypt";
+import { authResolver } from "../../../utils/authResolver";
 
 export default {
   Mutation: {
-    EditProfile: async (_, args, context) => {
+    EditProfile: authResolver(async (_, args, context) => {
       const { nickname, email, password } = args;
       if (context.user === undefined)
         return { status: false, errorMsg: "please login first" };
@@ -20,6 +21,6 @@ export default {
       });
       if (updatedUser.id) return { status: true };
       return { status: false, errorMsg: "cannot update profile" };
-    },
+    }),
   },
 };
