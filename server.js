@@ -1,6 +1,6 @@
 require("dotenv").config();
 import { ApolloServer } from "apollo-server";
-import schema from "./schema";
+import { typeDefs, resolvers } from "./schema";
 import { PrismaClient } from "@prisma/client";
 import jwt from "jsonwebtoken";
 
@@ -8,7 +8,8 @@ const prisma = new PrismaClient();
 
 const PORT = process.env.SERVER_PORT;
 const server = new ApolloServer({
-  schema,
+  resolvers,
+  typeDefs,
   context: async ({ req }) => {
     try {
       if (req.headers.authorization) {
