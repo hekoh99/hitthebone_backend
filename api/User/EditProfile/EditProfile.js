@@ -2,7 +2,7 @@ import bcrypt from "bcrypt";
 import { authResolver } from "../../../utils/authResolver";
 
 const editFunc = async (_, args, context) => {
-  const { nickname, email, password } = args;
+  const { nickname, email, password, profileImg } = args;
   let hashedPwd = null;
   if (password) hashedPwd = await bcrypt.hash(password, 10);
   const updatedUser = await context.prisma.User.update({

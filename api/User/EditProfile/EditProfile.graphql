@@ -1,3 +1,8 @@
 type Mutation {
-  EditProfile(nickname: String, email: String, password: String): Result!
+  EditProfile(
+    nickname: String
+    email: String
+    password: String
+    profileImg: String
+  ): Result!
 }
